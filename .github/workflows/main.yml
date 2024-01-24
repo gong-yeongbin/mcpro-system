@@ -31,8 +31,8 @@ jobs:
         with:
           aws_access_key: ${{secrets.AWS_ACCESS_KEY}}
           aws_secret_key: ${{secrets.AWS_SECRET_KEY}}
-          application_name: 'test'
-          environment_name: 'Test-env'
+          application_name: 'mecrosspro-system'
+          environment_name: 'production'
           region: ap-northeast-2
           version_label: 'mecrosspro-production-${{ github.run_number }}'
           deployment_package: dist.zip
