@@ -7,6 +7,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { BullModule } from '@nestjs/bull';
 import { RedisModule } from './redis/redis.module';
 import * as process from 'process';
+import { PostbackModule } from './postback/postback.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import * as process from 'process';
       },
     }),
     TrackingModule,
+    PostbackModule,
     RedisModule,
   ],
   controllers: [AppController],
